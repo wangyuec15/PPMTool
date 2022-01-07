@@ -11,7 +11,7 @@ public class Project {
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	private Long id;
 	private String projectName;
-	private String projectIdentifer;
+	private String projectIdentifier;
 	private String description;
 	private Date start_date;
 	private Date end_date;
@@ -39,12 +39,12 @@ public class Project {
 		this.projectName = projectName;
 	}
 	
-	public String getProjectIdentifer() {
-		return projectIdentifer;
+	public String getProjectIdentifier() {
+		return projectIdentifier;
 	}
 	
-	public void setProjectIdentifer(String projectIdentifer) {
-		this.projectIdentifer = projectIdentifer; 
+	public void setProjectIdentifier(String projectIdentifier) {
+		this.projectIdentifier = projectIdentifier; 
 	}
 	
 	public String getDescription() {
