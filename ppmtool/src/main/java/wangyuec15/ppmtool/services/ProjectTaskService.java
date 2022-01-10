@@ -79,10 +79,19 @@ public class ProjectTaskService {
 			throw new ProjectNotFoundException("Project Task: '"+pt_id+"' does not exist");
 		}
 		
-		if(!projectTask.getProjectIdentifier().equals(backlog_id)) {
+		if(!projectTask.getProjectIdentifier().equals(backlog_id.toUpperCase())) {
 			throw new ProjectNotFoundException("Project Task: '"+pt_id+"' does not exist in project '"+backlog_id+"'");
 		}
 		
 		return projectTask;
 	}
+	
+	public ProjectTask updateByProjectSequence(ProjectTask updatedTask, String backlog_id, String pt_id) {
+		ProjectTask projectTask = projectTaskRepository.findByProjectSequence(pt_id);
+		
+		projectTask = updatedTask;
+		
+		return projectTaskRepository.save(projectTask);
+	}
+//	Update project task
 }
