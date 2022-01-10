@@ -1,5 +1,7 @@
 package wangyuec15.ppmtool.services;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
@@ -45,4 +47,13 @@ public class ProjectTaskService {
 		return projectTaskRepository.save(projectTask);
 		
 	}
+	
+	public Iterable<ProjectTask> findBacklogById(String id) {
+		return projectTaskRepository.findByProjectIdentifierOrderByPriority(id);
+	}
+
+//	public List<ProjectTask> findBacklogById(String backlog_id) {
+//		// TODO Auto-generated method stub
+//		return null;
+//	}
 }
