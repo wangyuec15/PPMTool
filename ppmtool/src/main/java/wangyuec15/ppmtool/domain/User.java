@@ -79,6 +79,14 @@ public class User implements UserDetails{
 		this.password = password;
 	}
 	
+	public String getConfirmPassword() {
+		return confirmPassword;
+	}
+	
+	public void setConfirmPassword(String confirmPassword) {
+		this.confirmPassword = confirmPassword;
+	}
+	
 	public Date getCreated_At() {
 		return created_At;
 	}
