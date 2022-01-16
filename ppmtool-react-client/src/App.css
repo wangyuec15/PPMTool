@@ -6,7 +6,7 @@ img {
   background-color: #e3f2fd;
 }
 .fa.fa-edit {
-  color: #18a2b9;
+  color: #5A82F2;
 }
 
 .list-group-item.delete:hover {
@@ -30,7 +30,6 @@ img {
 
 .landing {
   position: relative;
-  /* background: url("../img/showcase.jpg") no-repeat; */
   background-size: cover;
   background-position: center;
   height: 100vh;
@@ -60,6 +59,106 @@ img {
   height: 40px;
 }
 
+.form-control {
+  margin-bottom: 15px;
+}
+
 .form-control::placeholder {
   color: #bbb !important;
+}
+
+.bgprimary {
+  background-color:#4B53F2 !important; 
+}
+
+.btnprim {background-image: linear-gradient(to right, #577EF2 0%, #5A82F2  51%, #577EF2  100%)}
+.btnprim {
+   margin: 10px;
+   padding: 0.7rem 1rem;
+   text-align: center;
+   transition: 0.5s;
+   background-size: 200% auto;
+   color: white;            
+   font-size: 1.25rem;
+   border-radius: 0.3rem;
+   text-decoration: none;
+   border-color: #ffffff00;
+ }
+
+ .btnprim:hover {
+   background-position: right center; /* change the direction of the change here */
+   color: #fff;
+   text-decoration: none;
+ }
+
+ .btnsec {
+  background-color: rgb(195, 195, 197);
+  margin: 10px;
+  padding: 0.7rem 1rem;
+  text-align: center;
+  transition: 0.3s;
+  color: white;            
+  font-size: 1.25rem;
+  border-radius: 0.3rem;
+  text-decoration: none;
+}
+
+.btnsec:hover {
+  background-color: rgb(156, 156, 156);
+  color: #fff;
+  text-decoration: none;
+}
+
+.bg1 {
+  background-color: #F2B705ff !important;
+  border-color: #ffffff00 !important;
+}
+
+.bg2 {
+  background-color: #F29F05ff !important;
+  border-color: #ffffff00 !important;
+}
+
+.bg3 {
+  background-color: #FF8005ff !important;
+  border-color: #ffffff00 !important;
+}
+
+.btnbg1 {
+  background-color: #5A82F2 !important;
+  border-color: #ffffff00 !important;;
+}
+
+.btnbg1:hover {
+  background-color: #4B53F2 !important;
+  border-color: #ffffff00 !important;;
+}
+
+.btnbg2 {
+  margin: 5px;
+  color: rgba(255, 0, 0, 0.849) !important;
+  background-color: #ffffff !important;
+  border-color: rgba(255, 0, 0, 0.815) !important;
+}
+
+.btnbg2:hover {
+  margin: 5px;
+  color: red !important;
+  background-color: #ffe0e0 !important;
+  border-color: red !important;
+}
+
+.bg4 {
+  background-color: rgb(215, 219, 213) !important;
+  border-color: #ffffff00 !important;
+}
+
+.bg5 {
+  background-color: rgb(175, 206, 154) !important;
+  border-color: #ffffff00 !important;
+}
+
+.bg6 {
+  background-color: rgb(124, 155, 116) !important;
+  border-color: #ffffff00 !important;
 }

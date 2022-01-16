@@ -24,10 +24,10 @@ class Landing extends Component {
                     Create your account to join active projects or start your own
                 </p>
                 <hr />
-                <Link to={"/register"} className="btn btn-lg btn-primary mr-2">
+                <Link to={"/register"} className="btnprim">
                     Sign Up
                 </Link>
-                <Link to={"/login"} className="btn btn-lg btn-secondary mr-2">
+                <Link to={"/login"} className="btnsec">
                     Login
                 </Link>
               </div>

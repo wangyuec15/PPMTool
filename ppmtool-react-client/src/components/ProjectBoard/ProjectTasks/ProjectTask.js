@@ -17,15 +17,15 @@ class ProjectTask extends Component {
     let priorityClass;
 
     if(project_task.priority ===1) {
-      priorityClass = "bg-danger text-light"
+      priorityClass = "bg3 text-light"
       priorityString = "HIGH"
     }
     if(project_task.priority ===2) {
-      priorityClass = "bg-warning text-light"
+      priorityClass = "bg2 text-light"
       priorityString = "MEDIUM"
     }
     if(project_task.priority ===3) {
-      priorityClass = "bg-info text-light"
+      priorityClass = "bg1 text-light"
       priorityString = "LOW"
     }
 
@@ -41,11 +41,11 @@ class ProjectTask extends Component {
               <p className="card-text text-truncate ">
                   {project_task.acceptanceCriteria}
               </p>
-              <Link to={`/updateProjectTask/${project_task.projectIdentifier}/${project_task.projectSequence}`} className="btn btn-primary">
+              <Link to={`/updateProjectTask/${project_task.projectIdentifier}/${project_task.projectSequence}`} className="btn btn-primary btnbg1">
                   View / Update
               </Link>
 
-              <button className="btn btn-danger ml-4" onClick={this.onDeleteClick.bind(this, project_task.projectIdentifier, project_task.projectSequence)}>
+              <button className="btn btn-danger btnbg2 ml-4" onClick={this.onDeleteClick.bind(this, project_task.projectIdentifier, project_task.projectSequence)}>
                   Delete
               </button>
           </div>
